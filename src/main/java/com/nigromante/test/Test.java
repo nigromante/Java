@@ -8,12 +8,14 @@ public class Test {
 
     public static void main(String[] args) {
 
+        System.out.println("=======================================================================");
         System.out.println("JAVA Testing tool");
         
         Test1.start(args); 
 
-        System.out.println(".....................................");
+        System.out.println("-----------------------------------------------------------------------");
         System.out.println("End.");
+        System.out.println("");
     }
 
 }
