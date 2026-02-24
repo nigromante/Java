@@ -5,5 +5,5 @@ build:
 	@mvn compile
 
 run:
-	 @mvn -q exec:java -D"exec.mainClass"="com.nigromante.test.Test"
+	 @mvn -q exec:java -D"exec.mainClass"="com.nigromante.test.Main"
 

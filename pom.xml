@@ -10,6 +10,6 @@
         <maven.compiler.release>17</maven.compiler.release>
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
-        <exec.mainClass>com.nigromante.test.Test</exec.mainClass>
+        <exec.mainClass>com.nigromante.test.Main</exec.mainClass>
     </properties>
 </project>

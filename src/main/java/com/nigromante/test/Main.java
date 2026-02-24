@@ -4,7 +4,7 @@ import com.nigromante.lib.Prueba;
 import com.nigromante.test.*;
 
 
-public class Test {
+public class Main {
 
     public static void main(String[] args) {
 
