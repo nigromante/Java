@@ -1,7 +1,7 @@
 
 package com.nigromante.test;
 import com.nigromante.lib.Prueba;
-import com.nigromante.test.Test1;
+import com.nigromante.test.*;
 
 
 public class Test {
@@ -12,6 +12,7 @@ public class Test {
         System.out.println("JAVA Testing tool");
         
         Test1.start(args); 
+        Seller.start(args); 
 
         System.out.println("-----------------------------------------------------------------------");
         System.out.println("End.");
