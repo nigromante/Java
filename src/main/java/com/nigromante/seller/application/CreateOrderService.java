@@ -13,9 +13,9 @@ public class CreateOrderService {
       this.orderRepository = orderRepository ;
     }
 
-    public int execute( CreateOrderCommand orderCommand ) {
-        Order order = orderCommand.CreateOrder();
-        this.orderRepository.save( order ) ; 
+    public int run( CreateOrderCommand orderCommand ) {
+          Order order = orderCommand.CreateOrder();
+          this.orderRepository.save( order ) ; 
         return 4321;
     }
 

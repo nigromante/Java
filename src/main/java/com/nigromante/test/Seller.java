@@ -11,11 +11,11 @@ public class Seller {
     public static void start(String[] args) {
 
         System.out.println("-----------------------------------------------------------------------");
-        System.out.println("Seller : ");
+        System.out.println("Seller : DDD structure");
         
     
         CreateOrderService a = new CreateOrderService( new OrderRepositoryMysql() );
-        int tt = a.execute( new CreateOrderCommand(1) );
+        int tt = a.run( new CreateOrderCommand("orderId" , "customerId") );
         a = null;
 
         System.out.println( "Returns : " + tt);

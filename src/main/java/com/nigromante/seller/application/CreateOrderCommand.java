@@ -6,18 +6,19 @@ import com.nigromante.seller.domain.entities.Order;
 
 public class CreateOrderCommand {
 
-    int id;
+    String orderId;
+    String customerId;
 
-    public CreateOrderCommand( int id ) {
+    public CreateOrderCommand( String orderId, String customerId ) {
 
-      this.id = id ;
+      this.orderId = orderId ;
+      this.customerId = customerId;
 
     }
 
     public Order CreateOrder() {
-      Order order = new Order( this.id );
-      return order;
-
+        Order order = new Order( this.orderId, this.customerId );
+        return order;
     }
 }
 
