@@ -1,8 +1,6 @@
 
+package com.nigromante.seller.domain.useCases.CreateOrder;
 
-package com.nigromante.seller.application;
-
-import com.nigromante.seller.domain.entities.Order;
 
 public class CreateOrderCommand {
 
@@ -16,9 +14,5 @@ public class CreateOrderCommand {
 
     }
 
-    public Order CreateOrder() {
-        Order order = new Order( this.orderId, this.customerId );
-        return order;
-    }
 }
 
