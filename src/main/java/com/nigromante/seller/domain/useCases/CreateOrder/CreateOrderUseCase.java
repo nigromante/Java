@@ -1,7 +1,6 @@
 
 
 package com.nigromante.seller.domain.useCases.CreateOrder;
-import  com.nigromante.seller.domain.useCases.CreateOrder.*;
 
 import com.nigromante.seller.domain.entities.Order;
 import com.nigromante.seller.domain.repositories.OrderRepository;
@@ -13,10 +12,15 @@ public class CreateOrderUseCase {
       this.orderRepository = orderRepository ;
     }
 
-    public int run( CreateOrderCommand command ) { 
-        Order order = CreateOrderMapper.Map( command );  
-        this.orderRepository.save( order ) ; 
-        return 4321;
+    public Order run( CreateOrderCommand command ) { 
+        try {
+            Order order = CreateOrderMapper.Map( command );  
+            this.orderRepository.save( order ) ; 
+            return order;
+        }catch (Exception ex ) {
+             System.out.println( "CreateOrderUseCase : " + ex.getMessage() );
+        }
+        return null ;
     }
 
 }

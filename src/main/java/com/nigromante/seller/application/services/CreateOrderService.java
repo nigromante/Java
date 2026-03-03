@@ -2,6 +2,7 @@
 
 
 package com.nigromante.seller.application.services;
+import com.nigromante.seller.domain.entities.Order;
 import  com.nigromante.seller.domain.useCases.CreateOrder.*;
 import  com.nigromante.seller.infrastructure.repositories.OrderRepositoryMysql;
 
@@ -11,10 +12,10 @@ public class CreateOrderService {
     
         CreateOrderUseCase useCase = new CreateOrderUseCase( new OrderRepositoryMysql() );
 
-        int tt = useCase.run( new CreateOrderCommand(orderId , customerId) );
+        Order order = useCase.run( new CreateOrderCommand(orderId , customerId) );
         useCase = null;
 
-        return tt;
+        return 0;
     }
 
 }

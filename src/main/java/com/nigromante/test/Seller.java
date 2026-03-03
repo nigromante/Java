@@ -10,7 +10,7 @@ public class Seller {
         System.out.println("-----------------------------------------------------------------------");
         System.out.println("Seller : DDD structure");
         
-        int tt = CreateOrderService.call("dfddfdfdf", "dsddssdsdsd");
+        int tt = CreateOrderService.call("mit", "gnn");
 
         System.out.println( "Returns : " + tt);
 

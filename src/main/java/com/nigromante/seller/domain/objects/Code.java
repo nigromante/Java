@@ -1,5 +1,6 @@
 
 package com.nigromante.seller.domain.objects;
+import com.nigromante.seller.domain.exceptions.CodeInvalidException;
 import java.io.IOException;
 
 public final class Code  {
@@ -7,9 +8,9 @@ public final class Code  {
   private String value;
   private String customerId;
 
-  public Code( String value ) throws IOException {
+  public Code( String value ) throws Exception {
     if( ! this.ensureValue( value) ) {
-      throw new IOException("Code not valid");
+      throw new CodeInvalidException();
     }
     this.value = value;
   }
