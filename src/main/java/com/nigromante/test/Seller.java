@@ -1,7 +1,7 @@
 
 package com.nigromante.test;
 
-import com.nigromante.seller.application.services.CreateOrderService;
+import com.nigromante.seller.application.services.*;
 
 public class Seller {
 
@@ -10,9 +10,11 @@ public class Seller {
         System.out.println("-----------------------------------------------------------------------");
         System.out.println("Seller : DDD structure");
         
-        int tt = CreateOrderService.call("mit", "gnn");
+        CreateOrderService service = new CreateOrderServiceImpl(); 
+        int tt = service.call("mit", "gnn");
 
         System.out.println( "Returns : " + tt);
+        System.out.println("-----------------------------------------------------------------------");
 
     }
 

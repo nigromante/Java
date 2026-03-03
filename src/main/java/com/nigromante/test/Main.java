@@ -1,8 +1,6 @@
 
 package com.nigromante.test;
 
-import com.nigromante.lib.Prueba;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -12,9 +10,7 @@ public class Main {
         
         Seller.start(args); 
 
-        System.out.println("-----------------------------------------------------------------------");
-        System.out.println("End.");
-        System.out.println("");
+        System.out.println("=======================================================================");
     }
 
 }
