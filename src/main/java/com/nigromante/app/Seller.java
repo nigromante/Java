@@ -1,5 +1,5 @@
 
-package com.nigromante.test;
+package com.nigromante.app;
 
 import com.nigromante.seller.application.services.*;
 
